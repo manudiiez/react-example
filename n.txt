@@ -1,0 +1,18 @@
+
+git pages react
+
+git add .
+git commit -m 'fisrt'
+git remote add origin https://github.com/manudiiez/react-example.git
+git push origin master
+
+
+instalamos gh-pages
+npm i gh-pages
+
+agregamos al package.json
+    "homepage": "https://manudiiez.github.io/react-example/",
+
+en scripts =
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
